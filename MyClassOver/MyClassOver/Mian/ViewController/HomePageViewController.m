@@ -17,7 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"我是首页";
+    self.tabBarController.title = @"我是首页";
     self.leftbarItem.hidden = YES;
     [self creatUI];
 }

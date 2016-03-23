@@ -10,6 +10,12 @@
 		776A1E6EB89767D618ADCE7E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E1834698B6A41E84F886CE5 /* libPods.a */; };
 		B079164F1CA26B0F00FC19F2 /* CircleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = B079164C1CA26B0F00FC19F2 /* CircleScrollView.m */; };
 		B07916501CA26B0F00FC19F2 /* ImageContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = B079164E1CA26B0F00FC19F2 /* ImageContentView.m */; };
+		B07916561CA26F5D00FC19F2 /* XCTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = B07916531CA26F5D00FC19F2 /* XCTabBar.m */; };
+		B07916571CA26F5D00FC19F2 /* XCTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B07916551CA26F5D00FC19F2 /* XCTabBarButton.m */; };
+		B079165A1CA26F8A00FC19F2 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = B07916591CA26F8A00FC19F2 /* UIView+Extension.m */; };
+		B079165D1CA273D300FC19F2 /* MyView.m in Sources */ = {isa = PBXBuildFile; fileRef = B079165C1CA273D300FC19F2 /* MyView.m */; };
+		B07916641CA2745D00FC19F2 /* QuietViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B07916631CA2745D00FC19F2 /* QuietViewController.m */; };
+		B07916671CA2747800FC19F2 /* MoveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B07916661CA2747800FC19F2 /* MoveViewController.m */; };
 		B0E9BEA61CA11DC600E0C3A5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B0E9BEA51CA11DC600E0C3A5 /* main.m */; };
 		B0E9BEA91CA11DC600E0C3A5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B0E9BEA81CA11DC600E0C3A5 /* AppDelegate.m */; };
 		B0E9BEAC1CA11DC600E0C3A5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0E9BEAB1CA11DC600E0C3A5 /* ViewController.m */; };
@@ -33,6 +39,18 @@
 		B079164C1CA26B0F00FC19F2 /* CircleScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleScrollView.m; sourceTree = "<group>"; };
 		B079164D1CA26B0F00FC19F2 /* ImageContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageContentView.h; sourceTree = "<group>"; };
 		B079164E1CA26B0F00FC19F2 /* ImageContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageContentView.m; sourceTree = "<group>"; };
+		B07916521CA26F5D00FC19F2 /* XCTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCTabBar.h; sourceTree = "<group>"; };
+		B07916531CA26F5D00FC19F2 /* XCTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCTabBar.m; sourceTree = "<group>"; };
+		B07916541CA26F5D00FC19F2 /* XCTabBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCTabBarButton.h; sourceTree = "<group>"; };
+		B07916551CA26F5D00FC19F2 /* XCTabBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCTabBarButton.m; sourceTree = "<group>"; };
+		B07916581CA26F8A00FC19F2 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		B07916591CA26F8A00FC19F2 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		B079165B1CA273D300FC19F2 /* MyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyView.h; sourceTree = SOURCE_ROOT; };
+		B079165C1CA273D300FC19F2 /* MyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyView.m; sourceTree = SOURCE_ROOT; };
+		B07916621CA2745D00FC19F2 /* QuietViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuietViewController.h; sourceTree = "<group>"; };
+		B07916631CA2745D00FC19F2 /* QuietViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuietViewController.m; sourceTree = "<group>"; };
+		B07916651CA2747800FC19F2 /* MoveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoveViewController.h; sourceTree = "<group>"; };
+		B07916661CA2747800FC19F2 /* MoveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoveViewController.m; sourceTree = "<group>"; };
 		B0E9BEA11CA11DC600E0C3A5 /* MyClassOver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyClassOver.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0E9BEA51CA11DC600E0C3A5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B0E9BEA71CA11DC600E0C3A5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -89,6 +107,54 @@
 			path = ScrolleView;
 			sourceTree = "<group>";
 		};
+		B07916511CA26F5D00FC19F2 /* Tab */ = {
+			isa = PBXGroup;
+			children = (
+				B07916581CA26F8A00FC19F2 /* UIView+Extension.h */,
+				B07916591CA26F8A00FC19F2 /* UIView+Extension.m */,
+				B07916521CA26F5D00FC19F2 /* XCTabBar.h */,
+				B07916531CA26F5D00FC19F2 /* XCTabBar.m */,
+				B07916541CA26F5D00FC19F2 /* XCTabBarButton.h */,
+				B07916551CA26F5D00FC19F2 /* XCTabBarButton.m */,
+			);
+			path = Tab;
+			sourceTree = "<group>";
+		};
+		B079165E1CA2742300FC19F2 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				B079165F1CA2742300FC19F2 /* Model */,
+				B07916601CA2742300FC19F2 /* View */,
+				B07916611CA2742300FC19F2 /* ViewController */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		B079165F1CA2742300FC19F2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B07916601CA2742300FC19F2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B07916611CA2742300FC19F2 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B07916621CA2745D00FC19F2 /* QuietViewController.h */,
+				B07916631CA2745D00FC19F2 /* QuietViewController.m */,
+				B07916651CA2747800FC19F2 /* MoveViewController.h */,
+				B07916661CA2747800FC19F2 /* MoveViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		B0E9BE981CA11DC600E0C3A5 = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +176,7 @@
 		B0E9BEA31CA11DC600E0C3A5 /* MyClassOver */ = {
 			isa = PBXGroup;
 			children = (
+				B079165E1CA2742300FC19F2 /* Mine */,
 				B0EBBD2E1CA12A6D009E276E /* Mian */,
 				B0E9BEC91CA11EA000E0C3A5 /* LoginAndRegist */,
 				B0EBBD281CA1215E009E276E /* Tools */,
@@ -173,6 +240,7 @@
 		B0EBBD281CA1215E009E276E /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				B07916511CA26F5D00FC19F2 /* Tab */,
 				B079164A1CA26B0F00FC19F2 /* ScrolleView */,
 				B0EBBD291CA1216E009E276E /* BaseViewController.h */,
 				B0EBBD2A1CA1216E009E276E /* BaseViewController.m */,
@@ -201,6 +269,8 @@
 		B0EBBD301CA12A6D009E276E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B079165B1CA273D300FC19F2 /* MyView.h */,
+				B079165C1CA273D300FC19F2 /* MyView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -355,11 +425,17 @@
 				B079164F1CA26B0F00FC19F2 /* CircleScrollView.m in Sources */,
 				B0EBBD2B1CA1216E009E276E /* BaseViewController.m in Sources */,
 				B0E9BEA91CA11DC600E0C3A5 /* AppDelegate.m in Sources */,
+				B07916561CA26F5D00FC19F2 /* XCTabBar.m in Sources */,
+				B07916641CA2745D00FC19F2 /* QuietViewController.m in Sources */,
+				B07916671CA2747800FC19F2 /* MoveViewController.m in Sources */,
 				B0E9BED11CA11EA000E0C3A5 /* FirstLunchViewController.m in Sources */,
+				B079165A1CA26F8A00FC19F2 /* UIView+Extension.m in Sources */,
+				B079165D1CA273D300FC19F2 /* MyView.m in Sources */,
 				B07916501CA26B0F00FC19F2 /* ImageContentView.m in Sources */,
 				B0EBBD341CA12A80009E276E /* HomePageViewController.m in Sources */,
 				B0E9BEA61CA11DC600E0C3A5 /* main.m in Sources */,
 				B0E9BED21CA11EA000E0C3A5 /* LoginViewController.m in Sources */,
+				B07916571CA26F5D00FC19F2 /* XCTabBarButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

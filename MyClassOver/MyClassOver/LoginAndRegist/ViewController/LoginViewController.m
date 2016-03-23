@@ -8,6 +8,8 @@
 
 #import "LoginViewController.h"
 #import "HomePageViewController.h"
+#import "ViewController.h"
+#import "AppDelegate.h"
 @interface LoginViewController ()<UITableViewDataSource,UITableViewDelegate>
 
 @end
@@ -33,8 +35,9 @@
 }
 - (void)btnClick
 {
-    HomePageViewController *home = [[HomePageViewController alloc] init];
-    [self.navigationController pushViewController:home animated:YES];
+    AppDelegate *app = (AppDelegate*)[UIApplication sharedApplication].delegate;
+    UINavigationController *mainN = [[UINavigationController alloc] initWithRootViewController:[[ViewController alloc] init]];
+    app.window.rootViewController = mainN;
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
