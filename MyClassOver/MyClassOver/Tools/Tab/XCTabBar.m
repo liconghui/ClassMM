@@ -33,7 +33,7 @@
     if (self = [super initWithFrame:frame]) {
        
         [self setupBg];
-//        self.backgroundColor = [UIColor whiteColor];
+        self.backgroundColor = [UIColor whiteColor];
     }
     return self;
 }

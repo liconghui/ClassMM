@@ -33,6 +33,7 @@ typedef NS_ENUM(NSInteger,CircleScrollStyle){
 
 
 @interface CircleScrollView : UIView<UIScrollViewDelegate>
+@property(nonatomic,retain)UIScrollView *scrollView;
 
 @property(nonatomic,assign)CircleScrollType circleScrollType;
 @property(nonatomic,assign)CircleScrollStyle circleScrollStyle;

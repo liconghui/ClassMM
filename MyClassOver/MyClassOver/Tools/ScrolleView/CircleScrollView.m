@@ -13,7 +13,6 @@
 
 @property(nonatomic,retain)NSArray *imgArr;
 @property(nonatomic,retain)UIPageControl *pageControl;
-@property(nonatomic,retain)UIScrollView *scrollView;
 
 @property(nonatomic,retain)NSTimer *timer;
 @end
@@ -25,6 +24,7 @@
 {
     self = [super init];
     if (self) {
+        
         self.circleScrollType = CircleScrollTypeDefault;
         self.circleScrollStyle = CircleScrollStyleNone;
 
@@ -42,6 +42,7 @@
             }
             
         }];
+        self.scrollView.bounces = NO;
         contentView.tag = urlStrArr.count ;
         [self.scrollView addSubview:contentView];
         
@@ -190,8 +191,10 @@
 
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
-    
-    
+    if (self.scrollView.contentOffset.y<0) {
+        return;
+    }
+       
     if (scrollView.contentOffset.x >= (self.imgArr.count+1)*scrollView.frame.size.width) {
         [scrollView setContentOffset:CGPointMake(scrollView.frame.size.width, 0)];
         
@@ -219,7 +222,7 @@
                 [subView imageOffsetValue:1];
             }else if(self.circleScrollStyle == CircleScrollStyleSkewing)
             {
-                [subView imageOffsetValue:0.1];
+                [subView imageOffsetValue:0.7];
 
             }
         }

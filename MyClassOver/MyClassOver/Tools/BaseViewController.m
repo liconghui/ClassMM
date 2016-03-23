@@ -16,8 +16,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.automaticallyAdjustsScrollViewInsets = NO;//防止表偏移问题
-    self.view.backgroundColor = [UIColor whiteColor];
+    self.automaticallyAdjustsScrollViewInsets = NO;//防止表偏移问题///
+//    self.view.backgroundColor = [UIColor whiteColor];
 //    self.edgesForExtendedLayout = UIRectEdgeNone ;
 //   self.navigationController.navigationBar.translucent = YES;//导航栏透明状态默认是yes，如果为no导航栏透明，（0，0）坐标就变成（0，64）
 //

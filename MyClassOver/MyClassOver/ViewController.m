@@ -60,7 +60,10 @@
     }
     return self;
 }
-
+- (void)loadView
+{
+    [super loadView];
+}
 #pragma mark view加载完毕
 
 - (void)viewDidLoad
