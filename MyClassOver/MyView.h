@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-
+typedef void(^BtnBlock)(id param,NSInteger btnTag);
 @interface MyView : UIView
-
+@property (nonatomic,strong)UIImageView *icon;
+@property (nonatomic,strong)UILabel    *showLabel;
+@property (nonatomic,strong)UIButton    *turnBtn;
+@property (nonatomic,copy)BtnBlock      backBlcok;
+- (id)init;
 @end

@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface DesViewController : BaseViewController
-
+@property (nonatomic,strong)NSString *indexHtml;
 @end

@@ -22,7 +22,7 @@
 }
 -(void)creatWebView
 {
-    NSString* path = [[NSBundle mainBundle] pathForResource:@"index" ofType:@"html"];
+    NSString* path = [[NSBundle mainBundle] pathForResource:self.indexHtml ofType:@"html"];
     UIWebView *webView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 64, WIDTH, HEIGHT-64)];
     webView.delegate  =self;
     [self.view addSubview:webView];

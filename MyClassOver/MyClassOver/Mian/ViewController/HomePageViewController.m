@@ -9,6 +9,8 @@
 #import "HomePageViewController.h"
 #import "ViewController.h"
 #import "CircleScrollView.h"
+#import "MyView.h"
+#import "DesViewController.h"
 #define BtnTag (1001)
 #define bannerSecla (800.0/320.0)
 #define BannerHeight (WIDTH/bannerSecla)
@@ -42,27 +44,51 @@
     [self.view addSubview:self.homeScrollView];
     float startX = 15;
     float startY =15;
+
     float btnwidth = (WIDTH-30-10)/2;
     for (int i=0; i<3; i++) {
-        UIButton *btn = [[UIButton alloc] init];
-        btn.backgroundColor = [UIColor yellowColor];
+        MyView *myview = [[MyView alloc] init];
+        myview.layer.borderWidth = 1;
+        myview.layer.borderColor = [UIColor yellowColor].CGColor;
         switch (i) {
             case 0:
-                btn.backgroundColor = [UIColor yellowColor];
+                myview.showLabel.text = @"汉字文化简介";
                 break;
             case 1:
-                btn.backgroundColor = [UIColor redColor];
+                myview.showLabel.text = @"汉字文化发展";
                 break;
             case 2:
-                btn.backgroundColor = [UIColor blueColor];
+               myview.showLabel.text = @"汉字文化圈";
                 break;
             default:
                 break;
         }
-        btn.tag = BtnTag+i;
-        [btn addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
-        btn.frame  =CGRectMake(startX+i%2*(btnwidth+10), startY+i/2*(btnwidth+10), btnwidth, btnwidth);
-        [self.homeScrollView addSubview:btn];
+        myview.tag = BtnTag+i;
+        __weak HomePageViewController *safeSelf = self;
+        myview.backBlcok = ^(id param,NSInteger btnTag){
+            DesViewController *de = [[DesViewController alloc] init];
+           
+            switch (btnTag) {
+                case 1001:
+                     de.indexHtml = @"index";
+                     de.title = @"汉字文化简介";
+                    break;
+                case 1002:
+                     de.indexHtml = @"Dev";
+                     de.title = @"汉字文化发展";
+                    break;
+                case 1003:
+                    de.indexHtml = @"QU";
+                     de.title = @"汉字文化圈";
+                    break;
+                default:
+                    break;
+            }
+            [safeSelf.navigationController pushViewController:de animated:YES];
+        
+        };
+        myview.frame  =CGRectMake(startX+i%2*(btnwidth+10), startY+i/2*(btnwidth+10), btnwidth, btnwidth);
+        [self.homeScrollView addSubview:myview];
         if (i==2) {
             self.homeScrollView.contentSize = CGSizeMake(WIDTH, 2*startX+10+2*btnwidth);
         }
