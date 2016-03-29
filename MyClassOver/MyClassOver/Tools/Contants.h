@@ -15,6 +15,7 @@
 #define HEIGHT [UIScreen mainScreen].bounds.size.height
 #define WIDTH [UIScreen mainScreen].bounds.size.width
 
+#define DEFAULT_BackgroundView_COLOR UIColorFromRGB(0xefefef, 1.0)
 
 #define IOS7 ([[[UIDevice currentDevice] systemVersion] floatValue]>=7.0)
 

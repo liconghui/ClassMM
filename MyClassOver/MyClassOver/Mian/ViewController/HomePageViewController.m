@@ -10,8 +10,10 @@
 #import "ViewController.h"
 #import "CircleScrollView.h"
 #define BtnTag (1001)
+#define bannerSecla (800.0/320.0)
+#define BannerHeight (WIDTH/bannerSecla)
 @interface HomePageViewController ()<CircleScrollDelegate>
-
+@property (nonatomic,strong)UIScrollView *homeScrollView;
 @end
 
 @implementation HomePageViewController
@@ -19,16 +21,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.leftbarItem.hidden = YES;
-    UIView *view = [[UIView alloc] init];
-    view.backgroundColor = [UIColor redColor];
-    view.frame = CGRectMake(0, 0, 10, 10);
-    [self.view addSubview:view];
+   
     [self creatScrollview];
     [self creatUI];
 }
 - (void)creatScrollview
 {
-    CircleScrollView *scr1 = [[CircleScrollView alloc]initWithImgs:@[@"1.jpg",@"2.jpg",@"3.jpg"] fram:CGRectMake(0,64,WIDTH, 300)];
+    CircleScrollView *scr1 = [[CircleScrollView alloc]initWithImgs:@[@"1.jpg",@"2.jpg",@"3.jpg",@"4.jpg",@"5.jpg"] fram:CGRectMake(0,64,WIDTH, BannerHeight)];
     scr1.circleScrollType = CircleScrollTypePageControl;
     scr1.circleScrollStyle = CircleScrollStyleSteadfast;
     scr1.circleDelegate = self;
@@ -36,8 +35,13 @@
 }
 - (void)creatUI
 {
+    
+    self.homeScrollView  = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 64+BannerHeight, WIDTH, HEIGHT-64-49-BannerHeight)];
+    self.homeScrollView.showsHorizontalScrollIndicator = NO;
+    self.homeScrollView.showsVerticalScrollIndicator = NO;
+    [self.view addSubview:self.homeScrollView];
     float startX = 15;
-    float startY =64+15+300;
+    float startY =15;
     float btnwidth = (WIDTH-30-10)/2;
     for (int i=0; i<3; i++) {
         UIButton *btn = [[UIButton alloc] init];
@@ -58,7 +62,10 @@
         btn.tag = BtnTag+i;
         [btn addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
         btn.frame  =CGRectMake(startX+i%2*(btnwidth+10), startY+i/2*(btnwidth+10), btnwidth, btnwidth);
-        [self.view addSubview:btn];
+        [self.homeScrollView addSubview:btn];
+        if (i==2) {
+            self.homeScrollView.contentSize = CGSizeMake(WIDTH, 2*startX+10+2*btnwidth);
+        }
     }
     
 }
