@@ -23,6 +23,9 @@
 		B046D1AA1CAA4F7200551FEF /* 5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B046D1A51CAA4F7200551FEF /* 5.jpg */; };
 		B046D1AD1CAA523100551FEF /* QuiteTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B046D1AC1CAA523100551FEF /* QuiteTableViewCell.m */; };
 		B046D1B01CAA54A200551FEF /* DesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B046D1AF1CAA54A200551FEF /* DesViewController.m */; };
+		B046D1B21CAA5BC000551FEF /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B046D1B11CAA5BC000551FEF /* MediaPlayer.framework */; };
+		B046D1B41CAA5D5700551FEF /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B046D1B31CAA5D5700551FEF /* AVFoundation.framework */; };
+		B046D1B71CAA651200551FEF /* PlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B046D1B61CAA651200551FEF /* PlayerViewController.m */; };
 		B079164F1CA26B0F00FC19F2 /* CircleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = B079164C1CA26B0F00FC19F2 /* CircleScrollView.m */; };
 		B07916501CA26B0F00FC19F2 /* ImageContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = B079164E1CA26B0F00FC19F2 /* ImageContentView.m */; };
 		B07916561CA26F5D00FC19F2 /* XCTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = B07916531CA26F5D00FC19F2 /* XCTabBar.m */; };
@@ -67,6 +70,10 @@
 		B046D1AC1CAA523100551FEF /* QuiteTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuiteTableViewCell.m; sourceTree = "<group>"; };
 		B046D1AE1CAA54A200551FEF /* DesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DesViewController.h; sourceTree = "<group>"; };
 		B046D1AF1CAA54A200551FEF /* DesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DesViewController.m; sourceTree = "<group>"; };
+		B046D1B11CAA5BC000551FEF /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		B046D1B31CAA5D5700551FEF /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		B046D1B51CAA651200551FEF /* PlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerViewController.h; sourceTree = "<group>"; };
+		B046D1B61CAA651200551FEF /* PlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerViewController.m; sourceTree = "<group>"; };
 		B079164B1CA26B0F00FC19F2 /* CircleScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleScrollView.h; sourceTree = "<group>"; };
 		B079164C1CA26B0F00FC19F2 /* CircleScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleScrollView.m; sourceTree = "<group>"; };
 		B079164D1CA26B0F00FC19F2 /* ImageContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageContentView.h; sourceTree = "<group>"; };
@@ -113,6 +120,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B046D1B41CAA5D5700551FEF /* AVFoundation.framework in Frameworks */,
+				B046D1B21CAA5BC000551FEF /* MediaPlayer.framework in Frameworks */,
 				776A1E6EB89767D618ADCE7E /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -123,6 +132,8 @@
 		7D4545B5544C42C023052E53 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B046D1B31CAA5D5700551FEF /* AVFoundation.framework */,
+				B046D1B11CAA5BC000551FEF /* MediaPlayer.framework */,
 				6E1834698B6A41E84F886CE5 /* libPods.a */,
 			);
 			name = Frameworks;
@@ -222,6 +233,8 @@
 				B07916661CA2747800FC19F2 /* MoveViewController.m */,
 				B046D1AE1CAA54A200551FEF /* DesViewController.h */,
 				B046D1AF1CAA54A200551FEF /* DesViewController.m */,
+				B046D1B51CAA651200551FEF /* PlayerViewController.h */,
+				B046D1B61CAA651200551FEF /* PlayerViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -524,6 +537,7 @@
 				B0E9BEA61CA11DC600E0C3A5 /* main.m in Sources */,
 				B0E9BED21CA11EA000E0C3A5 /* LoginViewController.m in Sources */,
 				B07916571CA26F5D00FC19F2 /* XCTabBarButton.m in Sources */,
+				B046D1B71CAA651200551FEF /* PlayerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -634,7 +648,7 @@
 				GCC_PREFIX_HEADER = "MyClassOver-Prefix.pch";
 				INFOPLIST_FILE = MyClassOver/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = huihui.MyClassOver;
+				PRODUCT_BUNDLE_IDENTIFIER = huihui.MyClassOver.;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -651,7 +665,7 @@
 				GCC_PREFIX_HEADER = "MyClassOver-Prefix.pch";
 				INFOPLIST_FILE = MyClassOver/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = huihui.MyClassOver;
+				PRODUCT_BUNDLE_IDENTIFIER = huihui.MyClassOver.;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
