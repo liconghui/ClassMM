@@ -39,6 +39,7 @@
 {
     
     self.homeScrollView  = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 64+BannerHeight, WIDTH, HEIGHT-64-49-BannerHeight)];
+    self.homeScrollView.backgroundColor = [UIColor whiteColor];
     self.homeScrollView.showsHorizontalScrollIndicator = NO;
     self.homeScrollView.showsVerticalScrollIndicator = NO;
     [self.view addSubview:self.homeScrollView];
@@ -49,16 +50,20 @@
     for (int i=0; i<3; i++) {
         MyView *myview = [[MyView alloc] init];
         myview.layer.borderWidth = 1;
-        myview.layer.borderColor = [UIColor yellowColor].CGColor;
+        myview.layer.borderColor = DEFAULT_BackgroundView_COLOR.CGColor;
+        myview.backgroundColor = [UIColor whiteColor];
         switch (i) {
             case 0:
                 myview.showLabel.text = @"汉字文化简介";
+                myview.icon .image = [UIImage imageNamed:@"wenhua"];
                 break;
             case 1:
                 myview.showLabel.text = @"汉字文化发展";
+                myview.icon .image = [UIImage imageNamed:@"fazhan"];
                 break;
             case 2:
                myview.showLabel.text = @"汉字文化圈";
+                myview.icon .image = [UIImage imageNamed:@"wenhuquan"];
                 break;
             default:
                 break;
