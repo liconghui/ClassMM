@@ -18,6 +18,7 @@
 		B046D1B21CAA5BC000551FEF /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B046D1B11CAA5BC000551FEF /* MediaPlayer.framework */; };
 		B046D1B41CAA5D5700551FEF /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B046D1B31CAA5D5700551FEF /* AVFoundation.framework */; };
 		B046D1B71CAA651200551FEF /* PlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B046D1B61CAA651200551FEF /* PlayerViewController.m */; };
+		B048941E1CAB730B00851B1E /* MyCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B048941D1CAB730B00851B1E /* MyCollectionViewCell.m */; };
 		B079164F1CA26B0F00FC19F2 /* CircleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = B079164C1CA26B0F00FC19F2 /* CircleScrollView.m */; };
 		B07916501CA26B0F00FC19F2 /* ImageContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = B079164E1CA26B0F00FC19F2 /* ImageContentView.m */; };
 		B07916561CA26F5D00FC19F2 /* XCTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = B07916531CA26F5D00FC19F2 /* XCTabBar.m */; };
@@ -27,6 +28,8 @@
 		B07916641CA2745D00FC19F2 /* QuietViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B07916631CA2745D00FC19F2 /* QuietViewController.m */; };
 		B07916671CA2747800FC19F2 /* MoveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B07916661CA2747800FC19F2 /* MoveViewController.m */; };
 		B07916731CA28ACE00FC19F2 /* HomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B07916711CA28ACE00FC19F2 /* HomePageViewController.m */; };
+		B095B98B1CABA53C002A488E /* MyCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B095B98A1CABA53C002A488E /* MyCollectionViewLayout.m */; };
+		B0C01D5A1CABAEAA0024562E /* MyCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = B0C01D591CABAEAA0024562E /* MyCollectionReusableView.m */; };
 		B0D3B5E61CAA79D9006D00A3 /* CSS.css in Resources */ = {isa = PBXBuildFile; fileRef = B0D3B5E31CAA79D9006D00A3 /* CSS.css */; };
 		B0D3B5E71CAA79D9006D00A3 /* Dev.html in Resources */ = {isa = PBXBuildFile; fileRef = B0D3B5E41CAA79D9006D00A3 /* Dev.html */; };
 		B0D3B5E81CAA79D9006D00A3 /* QU.html in Resources */ = {isa = PBXBuildFile; fileRef = B0D3B5E51CAA79D9006D00A3 /* QU.html */; };
@@ -87,6 +90,8 @@
 		B046D1B31CAA5D5700551FEF /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		B046D1B51CAA651200551FEF /* PlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerViewController.h; sourceTree = "<group>"; };
 		B046D1B61CAA651200551FEF /* PlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerViewController.m; sourceTree = "<group>"; };
+		B048941C1CAB730B00851B1E /* MyCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCollectionViewCell.h; sourceTree = "<group>"; };
+		B048941D1CAB730B00851B1E /* MyCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCollectionViewCell.m; sourceTree = "<group>"; };
 		B079164B1CA26B0F00FC19F2 /* CircleScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleScrollView.h; sourceTree = "<group>"; };
 		B079164C1CA26B0F00FC19F2 /* CircleScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleScrollView.m; sourceTree = "<group>"; };
 		B079164D1CA26B0F00FC19F2 /* ImageContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageContentView.h; sourceTree = "<group>"; };
@@ -105,6 +110,10 @@
 		B07916661CA2747800FC19F2 /* MoveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoveViewController.m; sourceTree = "<group>"; };
 		B07916701CA28ACE00FC19F2 /* HomePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageViewController.h; sourceTree = "<group>"; };
 		B07916711CA28ACE00FC19F2 /* HomePageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePageViewController.m; sourceTree = "<group>"; };
+		B095B9891CABA53C002A488E /* MyCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCollectionViewLayout.h; sourceTree = "<group>"; };
+		B095B98A1CABA53C002A488E /* MyCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCollectionViewLayout.m; sourceTree = "<group>"; };
+		B0C01D581CABAEAA0024562E /* MyCollectionReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCollectionReusableView.h; sourceTree = "<group>"; };
+		B0C01D591CABAEAA0024562E /* MyCollectionReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCollectionReusableView.m; sourceTree = "<group>"; };
 		B0D3B5E31CAA79D9006D00A3 /* CSS.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = CSS.css; sourceTree = "<group>"; };
 		B0D3B5E41CAA79D9006D00A3 /* Dev.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Dev.html; sourceTree = "<group>"; };
 		B0D3B5E51CAA79D9006D00A3 /* QU.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = QU.html; sourceTree = "<group>"; };
@@ -239,6 +248,12 @@
 			children = (
 				B046D1AB1CAA523100551FEF /* QuiteTableViewCell.h */,
 				B046D1AC1CAA523100551FEF /* QuiteTableViewCell.m */,
+				B048941C1CAB730B00851B1E /* MyCollectionViewCell.h */,
+				B048941D1CAB730B00851B1E /* MyCollectionViewCell.m */,
+				B095B9891CABA53C002A488E /* MyCollectionViewLayout.h */,
+				B095B98A1CABA53C002A488E /* MyCollectionViewLayout.m */,
+				B0C01D581CABAEAA0024562E /* MyCollectionReusableView.h */,
+				B0C01D591CABAEAA0024562E /* MyCollectionReusableView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -630,6 +645,8 @@
 			files = (
 				B0E9BEAC1CA11DC600E0C3A5 /* ViewController.m in Sources */,
 				B079164F1CA26B0F00FC19F2 /* CircleScrollView.m in Sources */,
+				B0C01D5A1CABAEAA0024562E /* MyCollectionReusableView.m in Sources */,
+				B095B98B1CABA53C002A488E /* MyCollectionViewLayout.m in Sources */,
 				B07916731CA28ACE00FC19F2 /* HomePageViewController.m in Sources */,
 				B0EBBD2B1CA1216E009E276E /* BaseViewController.m in Sources */,
 				B0E9BEA91CA11DC600E0C3A5 /* AppDelegate.m in Sources */,
@@ -646,6 +663,7 @@
 				B0E9BED21CA11EA000E0C3A5 /* LoginViewController.m in Sources */,
 				B07916571CA26F5D00FC19F2 /* XCTabBarButton.m in Sources */,
 				B046D1B71CAA651200551FEF /* PlayerViewController.m in Sources */,
+				B048941E1CAB730B00851B1E /* MyCollectionViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
