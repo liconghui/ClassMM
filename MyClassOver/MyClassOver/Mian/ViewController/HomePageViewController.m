@@ -12,7 +12,7 @@
 #import "MyView.h"
 #import "DesViewController.h"
 #define BtnTag (1001)
-#define bannerSecla (800.0/320.0)
+#define bannerSecla (800.0/400.0)
 #define BannerHeight (WIDTH/bannerSecla)
 @interface HomePageViewController ()<CircleScrollDelegate>
 @property (nonatomic,strong)UIScrollView *homeScrollView;
@@ -29,7 +29,7 @@
 }
 - (void)creatScrollview
 {
-    CircleScrollView *scr1 = [[CircleScrollView alloc]initWithImgs:@[@"1.jpg",@"2.jpg",@"3.jpg",@"4.jpg",@"5.jpg"] fram:CGRectMake(0,64,WIDTH, BannerHeight)];
+    CircleScrollView *scr1 = [[CircleScrollView alloc]initWithImgs:@[@"1.jpg",@"2.jpg",@"3.jpg",@"4.jpg"] fram:CGRectMake(0,64,WIDTH, BannerHeight)];
     scr1.circleScrollType = CircleScrollTypePageControl;
     scr1.circleScrollStyle = CircleScrollStyleSteadfast;
     scr1.circleDelegate = self;
@@ -55,15 +55,15 @@
         switch (i) {
             case 0:
                 myview.showLabel.text = @"汉字文化简介";
-                myview.icon .image = [UIImage imageNamed:@"wenhua"];
+                myview.icon .image = [UIImage imageNamed:@"wen"];
                 break;
             case 1:
                 myview.showLabel.text = @"汉字文化发展";
-                myview.icon .image = [UIImage imageNamed:@"fazhan"];
+                myview.icon .image = [UIImage imageNamed:@"fa"];
                 break;
             case 2:
                myview.showLabel.text = @"汉字文化圈";
-                myview.icon .image = [UIImage imageNamed:@"wenhuquan"];
+                myview.icon .image = [UIImage imageNamed:@"wenquan"];
                 break;
             default:
                 break;

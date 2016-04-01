@@ -31,7 +31,7 @@
     self.leftbarItem.frame  =CGRectMake(0, 44/2-15, 30, 30);
     [self.leftbarItem setImage:[UIImage imageNamed:@"left_arrow"] forState:UIControlStateNormal];
     [self.leftbarItem addTarget:self action:@selector(backClick) forControlEvents:UIControlEventTouchUpInside];
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:self.leftbarItem];
+    self.tabBarController.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:self.leftbarItem];
 }
 
 - (void)backClick

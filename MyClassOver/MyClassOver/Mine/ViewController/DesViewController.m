@@ -17,7 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title  =@"介绍";
+    
     [self creatWebView];
 }
 -(void)creatWebView
